@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(34, 34, 34);
+  color: rgb(242, 242, 242);
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 0.75px;
+}
+.heading {
+  margin: 25px 0px;
+}
+.buttonGroup {
+  display: flex;
+  width: 500px;
+}
+.generateFlag {
+  background-color: rgb(55, 104, 183);
+  width: 90%;
+  padding: 10px 0px;
+  offset: 0;
+  border: 0;
+  margin: 25px 0px;
+  color: rgb(242, 242, 242);
+}
+.generateFlag:hover {
+  filter: brightness(0.75);
+  cursor: pointer;
+}
+.downloadFlag {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  offset: 0;
+  border: 0;
+  margin: 25px 0px;
+}
+.downloadFlag:hover {
+  filter: brightness(0.75);
+  cursor: pointer;
+}
+.downloadFlag img {
+  width: 20px;
+  height: 20px;
+  margin: 0px 25px;
+}
+.flag {
+  display: block;
+  border: 1px rgb(242, 242, 242) solid;
+  width: 500px;
+  height: 300px;
+}
+@media screen and (max-width: 768px) {
+  .flag {
+    width: 75vw;
+    height: 45vw;
+  }
+  .generateFlag {
+    width: 75vw;
+  }
+}
